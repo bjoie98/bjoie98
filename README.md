@@ -3,7 +3,7 @@
 - 🌱 I’m currently learning HTML and Python
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ...
-
+- Im going to be so fr I dont understand how to work this site
 <!---
 bjoie98/bjoie98 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
