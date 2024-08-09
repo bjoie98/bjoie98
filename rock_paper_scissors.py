@@ -1,35 +1,62 @@
-# rock paper scissors.. SHOOT!
-# I wanted to use words instead of numbers 💕
+# Write code below 💖
 
-import random
-
-word_to_int = {"rock": 1, "paper": 2, "scissors": 3}
-
-answers = ['rock', 'paper', 'scissors']
-# converts cpu choice into integer
-chosen_str_answer =  random.choice(answers)
-chosen_answer = word_to_int[chosen_str_answer]
-
+# beginning message
 print('===================')
-print('      ✊ ✋ ✌      ')
+print('Rock Paper Scissors')
 print('===================')
+print('1) ✊')
+print('2) ✋')
+print('3) ✌️')
+answer = int(input('Pick a number:  '))
+print('   ')
 
 
-my_choice = input('Rock, Paper, Scissors?: ' )
-
-print('you chose: ' + my_choice)
-# chosen_str_answer displays words
-print('computer chose: '  + chosen_str_answer)
-
-# converts my choice to an integer ,,, "lower" is added for case sensitivity
-my_choice = word_to_int[my_choice.lower()]
-
-# the verdict
-if chosen_answer == my_choice:
-  print('tie')
-elif (chosen_answer == 1 and my_choice == 2) or (chosen_answer == 2 and my_choice == 3) or (chosen_answer == 3 and my_choice == 1):
-  print('you win!')
-elif (chosen_answer == 1 and my_choice == 3) or (chosen_answer == 2 and my_choice == 1) or (chosen_answer == 2 and my_choice == 2):
-  print('you lose...')
+# Say what the users answer is
+if answer == 1:
+  print('You chose Rock')
+elif answer == 2:
+  print('You chose Paper')
+elif answer == 3:
+  print('You chose Scissors')
 else:
-  print('error')
+  print("Your answer wasn't an option..")
+
+
+# telling the cpu what to pick AND how to say their answer
+import random
+random = random.randint(1, 3)
+
+if random == 1:
+  com_answer = 'Rock'
+elif random == 2:
+  com_answer = 'Paper'
+elif random == 3:
+  com_answer = 'Scissors'
+
+if random == 1:
+  print('CPU chose Rock')
+elif random == 2:
+  print('CPU chose Paper')
+elif random == 3:
+  print('CPU chose Scissors')
+print('   ')
+
+# did you win or lose?
+if random == answer:
+  print('Draw!')
+elif random == 1 and answer == 2:
+  print('You Win!')
+elif random == 1 and answer == 3:
+  print('You Lose...')
+elif random == 2 and answer == 1:
+  print('You Lose...')
+elif random == 2 and answer == 3:
+  print('You Win!')
+elif random == 3 and answer == 2:
+  print('You Lose...')
+elif random == 3 and answer == 1:
+  print('You Win!')
+else:
+  print("Can't play, try again")
+
+
