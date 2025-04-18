@@ -17,6 +17,7 @@ print('===================')
 
 my_choice = input('Rock, Paper, Scissors, Lizard, Spock?: ' )
 
+print('')
 print('you chose: ' + my_choice)
 # chosen_str_answer displays words
 print('computer chose: '  + chosen_str_answer)
